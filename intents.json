@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "category_order": [
+    "card_arrival",
+    "card_linking",
+    "card_not_working",
+    "declined_card_payment",
+    "lost_or_stolen_card",
+    "pin_blocked",
+    "pending_transfer",
+    "failed_transfer",
+    "transfer_not_received_by_recipient",
+    "wrong_amount_of_cash_received",
+    "passcode_forgotten",
+    "unable_to_verify_identity"
+  ],
+  "intents": [
+    {
+      "label": "card_arrival",
+      "display_name": "Card delivery",
+      "definition": "Enquiries about when a newly ordered or replacement payment card will arrive."
+    },
+    {
+      "label": "card_linking",
+      "display_name": "Card linking",
+      "definition": "Enquiries about activating, linking, or reactivating a physical or virtual payment card in the app."
+    },
+    {
+      "label": "card_not_working",
+      "display_name": "Card not working",
+      "definition": "Reports that a physical payment card is malfunctioning or failing at terminals or ATMs."
+    },
+    {
+      "label": "declined_card_payment",
+      "display_name": "Declined card payment",
+      "definition": "Enquiries about why a specific card purchase or point-of-sale transaction was declined."
+    },
+    {
+      "label": "lost_or_stolen_card",
+      "display_name": "Lost or stolen card",
+      "definition": "Urgent reports that a customer's payment card has been misplaced, lost, or stolen."
+    },
+    {
+      "label": "pin_blocked",
+      "display_name": "PIN blocked",
+      "definition": "Requests to unblock a card PIN after entering incorrect PIN attempts."
+    },
+    {
+      "label": "pending_transfer",
+      "display_name": "Pending transfer",
+      "definition": "Enquiries about why an outgoing or incoming bank transfer is still marked as pending."
+    },
+    {
+      "label": "failed_transfer",
+      "display_name": "Failed transfer",
+      "definition": "Reports of bank transfers that failed, bounced back, or were rejected during processing."
+    },
+    {
+      "label": "transfer_not_received_by_recipient",
+      "display_name": "Transfer not received",
+      "definition": "Enquiries where funds left the sender's account but have not yet arrived in the recipient's account."
+    },
+    {
+      "label": "wrong_amount_of_cash_received",
+      "display_name": "Wrong ATM cash amount",
+      "definition": "Disputes where an ATM dispensed less cash than requested while debiting the full amount."
+    },
+    {
+      "label": "passcode_forgotten",
+      "display_name": "Passcode forgotten",
+      "definition": "Requests to reset or recover a forgotten mobile banking app login passcode."
+    },
+    {
+      "label": "unable_to_verify_identity",
+      "display_name": "Identity verification failed",
+      "definition": "Issues completing identity or document verification checks during account setup or review."
+    }
+  ]
+}

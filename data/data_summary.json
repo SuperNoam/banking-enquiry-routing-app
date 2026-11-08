@@ -1,0 +1,85 @@
+{
+  "seed": 42,
+  "raw_train_total_rows": 10003,
+  "raw_test_total_rows": 3080,
+  "selected_12_train_rows_before_exclusion": 1597,
+  "selected_12_train_rows_retained": 1597,
+  "selected_12_test_rows": 480,
+  "deduplication_and_exclusions": {
+    "conflicting_duplicate_groups_excluded": 0,
+    "conflicting_duplicate_rows_excluded": 0,
+    "excluded_source_ids": [],
+    "retained_duplicate_groups_count": 2,
+    "retained_messages_in_duplicate_groups": 4,
+    "retained_extra_duplicate_instances": 2
+  },
+  "split_totals": {
+    "fit": 1117,
+    "selection": 240,
+    "calibration": 240,
+    "test": 480
+  },
+  "split_proportions_dev": {
+    "fit": 0.6994,
+    "selection": 0.1503,
+    "calibration": 0.1503
+  },
+  "category_counts_by_split": {
+    "fit": {
+      "card_arrival": 107,
+      "card_linking": 97,
+      "card_not_working": 78,
+      "declined_card_payment": 107,
+      "lost_or_stolen_card": 58,
+      "pin_blocked": 81,
+      "pending_transfer": 104,
+      "failed_transfer": 95,
+      "transfer_not_received_by_recipient": 119,
+      "wrong_amount_of_cash_received": 126,
+      "passcode_forgotten": 73,
+      "unable_to_verify_identity": 72
+    },
+    "selection": {
+      "card_arrival": 23,
+      "card_linking": 21,
+      "card_not_working": 17,
+      "declined_card_payment": 23,
+      "lost_or_stolen_card": 12,
+      "pin_blocked": 17,
+      "pending_transfer": 22,
+      "failed_transfer": 21,
+      "transfer_not_received_by_recipient": 26,
+      "wrong_amount_of_cash_received": 27,
+      "passcode_forgotten": 16,
+      "unable_to_verify_identity": 15
+    },
+    "calibration": {
+      "card_arrival": 23,
+      "card_linking": 21,
+      "card_not_working": 17,
+      "declined_card_payment": 23,
+      "lost_or_stolen_card": 12,
+      "pin_blocked": 17,
+      "pending_transfer": 22,
+      "failed_transfer": 21,
+      "transfer_not_received_by_recipient": 26,
+      "wrong_amount_of_cash_received": 27,
+      "passcode_forgotten": 16,
+      "unable_to_verify_identity": 15
+    },
+    "test": {
+      "card_arrival": 40,
+      "card_linking": 40,
+      "card_not_working": 40,
+      "declined_card_payment": 40,
+      "lost_or_stolen_card": 40,
+      "pin_blocked": 40,
+      "pending_transfer": 40,
+      "failed_transfer": 40,
+      "transfer_not_received_by_recipient": 40,
+      "wrong_amount_of_cash_received": 40,
+      "passcode_forgotten": 40,
+      "unable_to_verify_identity": 40
+    }
+  }
+}
