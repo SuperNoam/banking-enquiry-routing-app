@@ -1,0 +1,7 @@
+method,C,selection_mean_log_loss,best_for_method,chosen_for_route
+tfidf,0.1,2.0045480442677412,False,False
+tfidf,1.0,0.8604010493101392,False,False
+tfidf,10.0,0.3397891091627694,True,False
+encoder,0.1,1.2096974258950326,False,False
+encoder,1.0,0.4085872439321975,False,False
+encoder,10.0,0.17947016774485608,True,True

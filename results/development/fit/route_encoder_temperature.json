@@ -1,0 +1,416 @@
+{
+  "model_id": "route_encoder_temperature",
+  "description": "Route classifier",
+  "split": "fit",
+  "run_id": "banking77_c13c6d140f_seed42_v1:route_encoder_temperature:fit",
+  "category_order": [
+    "card_arrival",
+    "card_linking",
+    "card_not_working",
+    "declined_card_payment",
+    "lost_or_stolen_card",
+    "pin_blocked",
+    "pending_transfer",
+    "failed_transfer",
+    "transfer_not_received_by_recipient",
+    "wrong_amount_of_cash_received",
+    "passcode_forgotten",
+    "unable_to_verify_identity"
+  ],
+  "n": 1117,
+  "accuracy": 0.9964189794091316,
+  "macro_f1": 0.9963353776341334,
+  "mean_log_loss": 0.039118329455168514,
+  "confusion_matrix": [
+    [
+      107,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      97,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      77,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      107,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      57,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      81,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      102,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      95,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      126,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      73,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      72
+    ]
+  ],
+  "per_category": [
+    {
+      "precision": 0.9907407407407407,
+      "recall": 1.0,
+      "f1": 0.9953488372093023,
+      "support": 107
+    },
+    {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 97
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.9871794871794872,
+      "f1": 0.9935483870967742,
+      "support": 78
+    },
+    {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 107
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.9827586206896551,
+      "f1": 0.991304347826087,
+      "support": 58
+    },
+    {
+      "precision": 0.9878048780487805,
+      "recall": 1.0,
+      "f1": 0.9938650306748467,
+      "support": 81
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.9807692307692307,
+      "f1": 0.9902912621359223,
+      "support": 104
+    },
+    {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 95
+    },
+    {
+      "precision": 0.9834710743801653,
+      "recall": 1.0,
+      "f1": 0.9916666666666667,
+      "support": 119
+    },
+    {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 126
+    },
+    {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 73
+    },
+    {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 72
+    }
+  ],
+  "calibration_bins": [
+    {
+      "bin": 0,
+      "lower": 0.0,
+      "upper": 0.1,
+      "upper_inclusive": false,
+      "count": 0,
+      "mean_confidence": null,
+      "fraction_correct": null
+    },
+    {
+      "bin": 1,
+      "lower": 0.1,
+      "upper": 0.2,
+      "upper_inclusive": false,
+      "count": 0,
+      "mean_confidence": null,
+      "fraction_correct": null
+    },
+    {
+      "bin": 2,
+      "lower": 0.2,
+      "upper": 0.3,
+      "upper_inclusive": false,
+      "count": 0,
+      "mean_confidence": null,
+      "fraction_correct": null
+    },
+    {
+      "bin": 3,
+      "lower": 0.3,
+      "upper": 0.4,
+      "upper_inclusive": false,
+      "count": 0,
+      "mean_confidence": null,
+      "fraction_correct": null
+    },
+    {
+      "bin": 4,
+      "lower": 0.4,
+      "upper": 0.5,
+      "upper_inclusive": false,
+      "count": 3,
+      "mean_confidence": 0.4723157100607294,
+      "fraction_correct": 1.0
+    },
+    {
+      "bin": 5,
+      "lower": 0.5,
+      "upper": 0.6,
+      "upper_inclusive": false,
+      "count": 6,
+      "mean_confidence": 0.5506603018788828,
+      "fraction_correct": 1.0
+    },
+    {
+      "bin": 6,
+      "lower": 0.6,
+      "upper": 0.7,
+      "upper_inclusive": false,
+      "count": 16,
+      "mean_confidence": 0.6458745653405438,
+      "fraction_correct": 0.8125
+    },
+    {
+      "bin": 7,
+      "lower": 0.7,
+      "upper": 0.8,
+      "upper_inclusive": false,
+      "count": 23,
+      "mean_confidence": 0.7526109460065749,
+      "fraction_correct": 1.0
+    },
+    {
+      "bin": 8,
+      "lower": 0.8,
+      "upper": 0.9,
+      "upper_inclusive": false,
+      "count": 44,
+      "mean_confidence": 0.8601527815604109,
+      "fraction_correct": 1.0
+    },
+    {
+      "bin": 9,
+      "lower": 0.9,
+      "upper": 1.0,
+      "upper_inclusive": true,
+      "count": 1025,
+      "mean_confidence": 0.9883285916035753,
+      "fraction_correct": 0.9990243902439024
+    }
+  ],
+  "review_trials": [
+    {
+      "threshold": 0.5,
+      "n": 1117,
+      "accepted": 1114,
+      "review_required": 3,
+      "wrong_accepted": 4,
+      "coverage": 0.9973142345568488,
+      "error": 0.003590664272890485
+    },
+    {
+      "threshold": 0.6,
+      "n": 1117,
+      "accepted": 1108,
+      "review_required": 9,
+      "wrong_accepted": 4,
+      "coverage": 0.9919427036705462,
+      "error": 0.0036101083032490976
+    },
+    {
+      "threshold": 0.7,
+      "n": 1117,
+      "accepted": 1092,
+      "review_required": 25,
+      "wrong_accepted": 1,
+      "coverage": 0.9776186213070726,
+      "error": 0.0009157509157509158
+    },
+    {
+      "threshold": 0.8,
+      "n": 1117,
+      "accepted": 1069,
+      "review_required": 48,
+      "wrong_accepted": 1,
+      "coverage": 0.9570277529095792,
+      "error": 0.0009354536950420954
+    },
+    {
+      "threshold": 0.9,
+      "n": 1117,
+      "accepted": 1025,
+      "review_required": 92,
+      "wrong_accepted": 1,
+      "coverage": 0.9176365264100269,
+      "error": 0.000975609756097561
+    }
+  ],
+  "saved_rule_outcome": {
+    "threshold": 0.5,
+    "n": 1117,
+    "accepted": 1114,
+    "review_required": 3,
+    "wrong_accepted": 4,
+    "coverage": 0.9973142345568488,
+    "error": 0.003590664272890485
+  }
+}

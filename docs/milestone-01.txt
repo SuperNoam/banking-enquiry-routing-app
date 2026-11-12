@@ -1,0 +1,33 @@
+Milestone 1: trained classifiers and statistical outputs
+
+Started from SuperNoam/banking-enquiry-routing-app at 58937af.
+Kept the existing 12 intents, source IDs and development split assignment.
+Added a train-only preparation path, six C comparisons, saved baseline and
+retained classifiers, temperature scaling, fixed review selection, 18 clustering
+runs, ARI/MI/permutation summaries, and the paired test bootstrap.
+
+Checks: 9 statistical checks passed (saved split compatibility, group
+separation, probability order/sums, unchanged argmax after scaling, hand
+calculations, empty input, fit-only vocabulary, saved metrics, cluster runs).
+
+Official test n=480. TF-IDF accuracy 94.375%; encoder/Route 95.833%.
+Route T=0.673121; threshold 0.5, selected using calibration only.
+No live LLM calls. No commits or pushes made.
+
+Extract these files into your existing clone. Then run:
+  python -m pip install -r requirements.txt
+  python -m pytest checks/test_statistics.py
+  git status --short
+  git add .gitignore .python-version .env.example config.json common.py \
+    preparation.py download_models.py models.py clustering.py train_evaluate.py \
+    checks artifacts data results docs
+  git commit -m "Train and evaluate classifiers, calibration, and request groups"
+  git push origin main
+
+MiniLM weights are ignored by Git; run python download_models.py.
+If your branch is not main, substitute its actual name.
+
+Pre-commit audit: initial files reviewed. Added pinned tested dependencies,
+README download/attribution instructions, THIRD_PARTY.md and CC BY 4.0 dataset
+license. No .env, keys, caches, virtualenv, local LLM or oversized weights.
+This is an intermediate checkpoint, not a final submission.

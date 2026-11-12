@@ -1,0 +1,271 @@
+{
+  "model_id": "frequency_fit",
+  "description": "Category-frequency baseline",
+  "split": "fit",
+  "run_id": "banking77_c13c6d140f_seed42_v1:frequency_fit:fit",
+  "category_order": [
+    "card_arrival",
+    "card_linking",
+    "card_not_working",
+    "declined_card_payment",
+    "lost_or_stolen_card",
+    "pin_blocked",
+    "pending_transfer",
+    "failed_transfer",
+    "transfer_not_received_by_recipient",
+    "wrong_amount_of_cash_received",
+    "passcode_forgotten",
+    "unable_to_verify_identity"
+  ],
+  "n": 1117,
+  "accuracy": 0.11280214861235452,
+  "macro_f1": 0.0168946098149638,
+  "mean_log_loss": 2.4616807838019445,
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      107,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      97,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      78,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      107,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      58,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      81,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      104,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      95,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      126,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      73,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      72,
+      0,
+      0
+    ]
+  ],
+  "per_category": [
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 107
+    },
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 97
+    },
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 78
+    },
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 107
+    },
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 58
+    },
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 81
+    },
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 104
+    },
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 95
+    },
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 119
+    },
+    {
+      "precision": 0.11280214861235452,
+      "recall": 1.0,
+      "f1": 0.20273531777956558,
+      "support": 126
+    },
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 73
+    },
+    {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 72
+    }
+  ],
+  "calibration_bins": [],
+  "review_trials": [],
+  "saved_rule_outcome": null
+}

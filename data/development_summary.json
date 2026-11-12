@@ -1,0 +1,57 @@
+{
+  "seed": 42,
+  "training_file_sha256": "c13c6d140f3072e184179261fe8204a9094b9fa3b021bcc4ddb3174ee36eea83",
+  "selected_train_rows": 1597,
+  "retained_train_rows": 1597,
+  "conflicting_groups_excluded": 0,
+  "conflicting_rows_excluded": 0,
+  "excluded_source_ids": [],
+  "duplicate_groups_retained": 2,
+  "messages_in_duplicate_groups": 4,
+  "extra_duplicate_instances": 2,
+  "counts": {
+    "calibration": {
+      "card_arrival": 23,
+      "card_linking": 21,
+      "card_not_working": 17,
+      "declined_card_payment": 23,
+      "lost_or_stolen_card": 12,
+      "pin_blocked": 17,
+      "pending_transfer": 22,
+      "failed_transfer": 21,
+      "transfer_not_received_by_recipient": 26,
+      "wrong_amount_of_cash_received": 27,
+      "passcode_forgotten": 16,
+      "unable_to_verify_identity": 15
+    },
+    "fit": {
+      "card_arrival": 107,
+      "card_linking": 97,
+      "card_not_working": 78,
+      "declined_card_payment": 107,
+      "lost_or_stolen_card": 58,
+      "pin_blocked": 81,
+      "pending_transfer": 104,
+      "failed_transfer": 95,
+      "transfer_not_received_by_recipient": 119,
+      "wrong_amount_of_cash_received": 126,
+      "passcode_forgotten": 73,
+      "unable_to_verify_identity": 72
+    },
+    "selection": {
+      "card_arrival": 23,
+      "card_linking": 21,
+      "card_not_working": 17,
+      "declined_card_payment": 23,
+      "lost_or_stolen_card": 12,
+      "pin_blocked": 17,
+      "pending_transfer": 22,
+      "failed_transfer": 21,
+      "transfer_not_received_by_recipient": 26,
+      "wrong_amount_of_cash_received": 27,
+      "passcode_forgotten": 16,
+      "unable_to_verify_identity": 15
+    }
+  },
+  "test_access": "Not read in preparation, model selection, calibration, or clustering"
+}

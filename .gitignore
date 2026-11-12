@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+.streamlit/secrets.toml
+artifacts/encoder/
+artifacts/llm/
+*.gguf
+*.mp4
+*.webm
+*.zip
+*.log
+work/
+.cache/
+results/runtime_traces.jsonl

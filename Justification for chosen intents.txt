@@ -1,0 +1,27 @@
+Justification for the Support Manager.
+A customer-support manager routes enquiries across four core operational queues:
+1. Card Logistics & Activation: 
+	card_arrival ("Card delivery"), 
+	card_linking ("Card linking"),
+	lost_or_stolen_card ("Lost or stolen card"). 
+
+2. Card Payment & Hardware Failures: 
+	card_not_working ("Card not working"), 
+	declined_card_payment ("Declined card payment"),
+	pin_blocked ("PIN blocked").  
+	
+3. Bank Transfers & Beneficiary Issues: 
+	pending_transfer ("Pending transfer"), 
+	failed_transfer ("Failed transfer"), 
+	transfer_not_received_by_recipient ("Transfer not received").   
+	
+4. Account Access & ATM Disputes: 
+	passcode_forgotten ("Passcode forgotten"), 
+	unable_to_verify_identity ("Identity verification failed"), 
+	wrong_amount_of_cash_received ("Wrong ATM cash amount").   
+	
+This selection covers high-volume daily support issues, 
+pairs naturally confused intents:
+(e.g., card_not_working vs. declined_card_payment, 
+and pending_transfer vs. transfer_not_received_by_recipient) 
+for meaningful error analysis, and separates cleanly into themes when clustering.

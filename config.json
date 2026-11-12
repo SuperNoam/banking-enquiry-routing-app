@@ -1,0 +1,81 @@
+{
+  "seed": 42,
+  "encoder": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "path": "artifacts/encoder",
+    "dimensions": 384,
+    "normalize_embeddings": true
+  },
+  "C_values": [
+    0.1,
+    1,
+    10
+  ],
+  "temperature_log_bounds": [
+    -4,
+    4
+  ],
+  "thresholds": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "clustering": {
+    "methods": [
+      "kmeans",
+      "gmm"
+    ],
+    "counts": [
+      6,
+      12,
+      18
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "pca_dimensions": 20,
+    "gmm_reg_covar": 1e-06,
+    "default": {
+      "method": "kmeans",
+      "k": 18,
+      "seed": 0,
+      "criterion": "mean_ari + 0.15*MI/H(Y) - 0.005*abs(k-12); fit data only"
+    }
+  },
+  "category_order": [
+    "card_arrival",
+    "card_linking",
+    "card_not_working",
+    "declined_card_payment",
+    "lost_or_stolen_card",
+    "pin_blocked",
+    "pending_transfer",
+    "failed_transfer",
+    "transfer_not_received_by_recipient",
+    "wrong_amount_of_cash_received",
+    "passcode_forgotten",
+    "unable_to_verify_identity"
+  ],
+  "selected_C": {
+    "tfidf": 10,
+    "encoder": 10
+  },
+  "chosen_method": "encoder",
+  "selection_ties": "Loss rounded to 12 decimals, smaller C within a method, TF-IDF across methods",
+  "model_ids": {
+    "frequency": "frequency_fit",
+    "tfidf": "tfidf_C10",
+    "encoder": "encoder_C10",
+    "route": "route_encoder_temperature"
+  },
+  "route_model_id": "route_encoder_temperature",
+  "run_id": "banking77_c13c6d140f_seed42_v1",
+  "temperature": 0.6731213241336798,
+  "review_threshold": 0.5,
+  "review_rule": "automatic if confidence >= 0.5"
+}

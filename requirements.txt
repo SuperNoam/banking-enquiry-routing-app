@@ -1,12 +1,19 @@
-streamlit>=1.38.0
-pandas>=2.2.0
-numpy>=1.26.0
-scipy>=1.13.0
-scikit-learn>=1.5.0
-sentence-transformers>=3.0.0
-plotly>=5.22.0
-matplotlib>=3.9.0
-pytest>=8.2.0
-python-dotenv>=1.0.1
-openai>=1.40.0
-google-genai>=0.3.0
+# Tested on Python 3.12, CPU; the extra index supplies CPU-only PyTorch.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0
+joblib==1.5.3
+sentence-transformers==3.4.1
+transformers==4.48.3
+huggingface-hub==0.36.0
+streamlit==1.50.0
+plotly==6.3.1
+matplotlib==3.10.8
+openai==2.7.1
+python-dotenv==1.2.1
+jsonschema==4.26.0
+pytest==8.4.2
+reportlab==4.4.4

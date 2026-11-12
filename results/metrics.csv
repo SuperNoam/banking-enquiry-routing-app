@@ -1,0 +1,17 @@
+model_id,description,split,run_id,n,accuracy,macro_f1,mean_log_loss
+frequency_fit,Category-frequency baseline,fit,banking77_c13c6d140f_seed42_v1:frequency_fit:fit,1117,0.11280214861235452,0.0168946098149638,2.4616807838019445
+tfidf_C10,TF-IDF classifier,fit,banking77_c13c6d140f_seed42_v1:tfidf_C10:fit,1117,1.0,1.0,0.1260272485053646
+encoder_C10,Encoder classifier,fit,banking77_c13c6d140f_seed42_v1:encoder_C10:fit,1117,0.9964189794091316,0.9963353776341334,0.09227462641136029
+route_encoder_temperature,Route classifier,fit,banking77_c13c6d140f_seed42_v1:route_encoder_temperature:fit,1117,0.9964189794091316,0.9963353776341334,0.039118329455168514
+frequency_fit,Category-frequency baseline,selection,banking77_c13c6d140f_seed42_v1:frequency_fit:selection,240,0.1125,0.016853932584269662,2.460250805733965
+tfidf_C10,TF-IDF classifier,selection,banking77_c13c6d140f_seed42_v1:tfidf_C10:selection,240,0.9375,0.9421467505684703,0.3397891091627694
+encoder_C10,Encoder classifier,selection,banking77_c13c6d140f_seed42_v1:encoder_C10:selection,240,0.9541666666666667,0.951003440640847,0.17947016774485608
+route_encoder_temperature,Route classifier,selection,banking77_c13c6d140f_seed42_v1:route_encoder_temperature:selection,240,0.9541666666666667,0.951003440640847,0.12986065836842114
+frequency_fit,Category-frequency baseline,calibration,banking77_c13c6d140f_seed42_v1:frequency_fit:calibration,240,0.1125,0.016853932584269662,2.460250805733965
+tfidf_C10,TF-IDF classifier,calibration,banking77_c13c6d140f_seed42_v1:tfidf_C10:calibration,240,0.9416666666666667,0.9428001708847296,0.3531390902093206
+encoder_C10,Encoder classifier,calibration,banking77_c13c6d140f_seed42_v1:encoder_C10:calibration,240,0.9583333333333334,0.9584510573770088,0.1871227926414062
+route_encoder_temperature,Route classifier,calibration,banking77_c13c6d140f_seed42_v1:route_encoder_temperature:calibration,240,0.9583333333333334,0.9584510573770088,0.15528359158190963
+frequency_fit,Category-frequency baseline,test,banking77_c13c6d140f_seed42_v1:frequency_fit:test,480,0.08333333333333333,0.012820512820512822,2.50900443321045
+tfidf_C10,TF-IDF classifier,test,banking77_c13c6d140f_seed42_v1:tfidf_C10:test,480,0.94375,0.9436986938459797,0.33300705456738894
+encoder_C10,Encoder classifier,test,banking77_c13c6d140f_seed42_v1:encoder_C10:test,480,0.9583333333333334,0.9583069237969585,0.1761227951984896
+route_encoder_temperature,Route classifier,test,banking77_c13c6d140f_seed42_v1:route_encoder_temperature:test,480,0.9583333333333334,0.9583069237969585,0.13974881616448837

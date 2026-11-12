@@ -1,0 +1,6 @@
+{
+  "method": "kmeans",
+  "k": 18,
+  "seed": 0,
+  "criterion": "mean_ari + 0.15*MI/H(Y) - 0.005*abs(k-12); fit data only"
+}

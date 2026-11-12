@@ -1,0 +1,271 @@
+{
+  "model_id": "tfidf_C10",
+  "description": "TF-IDF classifier",
+  "split": "calibration",
+  "run_id": "banking77_c13c6d140f_seed42_v1:tfidf_C10:calibration",
+  "category_order": [
+    "card_arrival",
+    "card_linking",
+    "card_not_working",
+    "declined_card_payment",
+    "lost_or_stolen_card",
+    "pin_blocked",
+    "pending_transfer",
+    "failed_transfer",
+    "transfer_not_received_by_recipient",
+    "wrong_amount_of_cash_received",
+    "passcode_forgotten",
+    "unable_to_verify_identity"
+  ],
+  "n": 240,
+  "accuracy": 0.9416666666666667,
+  "macro_f1": 0.9428001708847296,
+  "mean_log_loss": 0.3531390902093206,
+  "confusion_matrix": [
+    [
+      23,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      19,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      14,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      23,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      17,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      21,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      19,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      23,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      27,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      14
+    ]
+  ],
+  "per_category": [
+    {
+      "precision": 0.7931034482758621,
+      "recall": 1.0,
+      "f1": 0.8846153846153846,
+      "support": 23
+    },
+    {
+      "precision": 0.95,
+      "recall": 0.9047619047619048,
+      "f1": 0.926829268292683,
+      "support": 21
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.8235294117647058,
+      "f1": 0.9032258064516129,
+      "support": 17
+    },
+    {
+      "precision": 0.92,
+      "recall": 1.0,
+      "f1": 0.9583333333333334,
+      "support": 23
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091,
+      "support": 12
+    },
+    {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 17
+    },
+    {
+      "precision": 0.9545454545454546,
+      "recall": 0.9545454545454546,
+      "f1": 0.9545454545454546,
+      "support": 22
+    },
+    {
+      "precision": 0.95,
+      "recall": 0.9047619047619048,
+      "f1": 0.926829268292683,
+      "support": 21
+    },
+    {
+      "precision": 0.8846153846153846,
+      "recall": 0.8846153846153846,
+      "f1": 0.8846153846153846,
+      "support": 26
+    },
+    {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 27
+    },
+    {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 16
+    },
+    {
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1": 0.9655172413793104,
+      "support": 15
+    }
+  ],
+  "calibration_bins": [],
+  "review_trials": [],
+  "saved_rule_outcome": null
+}
