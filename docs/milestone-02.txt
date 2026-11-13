@@ -1,0 +1,49 @@
+Milestone 2: Streamlit workspace and Windows regeneration
+
+Continued from the user's checkpoint 1 commit 8d1ff19. During UI development,
+the user explicitly requested regenerating the models and results locally.
+Ran the pinned MiniLM download and Python 3.12.16 training/evaluation pipeline.
+All 12 categories, source IDs and development split assignments are retained.
+
+Added app.py, app_data.py, .streamlit/config.toml and checks/test_app.py.
+Updated README.md and BANKING_PROJECT_HANDOFF.md.
+
+The app provides development-data browsing, real enquiry routing, seed-0
+K-means/GMM group exploration, model comparisons and the agent question screen.
+Statistical views use submitted CSV/JSON files. Routing uses the saved model,
+fixed encoder, calibrated probabilities and review rule. UI code never fits.
+The API agent screen explicitly marks integration pending and disables Ask.
+
+Implemented model/subset selectors, source IDs/text, ranked group members,
+confusion counts, calibration bins, review selection/outcomes, bootstrap
+interpretation and context-preserving CSV exports. Added explicit errors for
+empty enquiries and missing encoder files. A failed submission clears any
+earlier routing result. Source enquiries use plain text/table rendering.
+
+Verification on Windows/Python 3.12.16
+  45 pytest checks passed, including the original 9 statistical checks.
+  Checked every model/subset combination, all 6 group method/count settings,
+  representative ranking/membership, source text preservation, CSV round trips,
+  real MiniLM inference, input errors, missing encoder and pending agent status.
+  Browser navigation exercised all five screens, group quality, confidence
+  and review, the fixed bootstrap panel, and real routing.
+  Downloaded CSVs were parsed and checked against 240 saved selection messages
+  and the displayed route with all 12 probabilities.
+  Browser review caught an empty automatic histogram on a logarithmic axis.
+  Explicit bin counts fixed it; a regression check verifies all 100 shuffles
+  are present in the plotted bars for each method/count setting.
+
+Observed limitation
+  "My card has not arrived" routes to card_arrival. The alternate wording
+  "My payment card still has not arrived." was classified as
+  declined_card_payment with high confidence. This is a classifier error that
+  the saved confidence threshold accepts. Preserve this observation for the
+  written report's limitations and live demonstration planning.
+
+Next milestone after USER commit/push confirmation
+  Review any supplied agent drafts before integration. Implement and test the
+  five API tools, adapter, bounded controller and evaluation runner. Prepare
+  real reference checks for the user's later live API runs. Additional checks
+  include the full test-label-mutation invariance requirement from PDF page 23.
+
+No live LLM questions were executed. The user performs the Git commit and push.

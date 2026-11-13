@@ -20,7 +20,7 @@
   "n": 480,
   "accuracy": 0.9583333333333334,
   "macro_f1": 0.9583069237969585,
-  "mean_log_loss": 0.13974881616448837,
+  "mean_log_loss": 0.13974906308833568,
   "confusion_matrix": [
     [
       39,
@@ -290,7 +290,7 @@
       "upper": 0.3,
       "upper_inclusive": false,
       "count": 1,
-      "mean_confidence": 0.2873089420401486,
+      "mean_confidence": 0.287311579274832,
       "fraction_correct": 0.0
     },
     {
@@ -299,7 +299,7 @@
       "upper": 0.4,
       "upper_inclusive": false,
       "count": 2,
-      "mean_confidence": 0.37709380584130764,
+      "mean_confidence": 0.37709086139657816,
       "fraction_correct": 0.5
     },
     {
@@ -308,7 +308,7 @@
       "upper": 0.5,
       "upper_inclusive": false,
       "count": 7,
-      "mean_confidence": 0.46222747439492057,
+      "mean_confidence": 0.46222578986597584,
       "fraction_correct": 0.7142857142857143
     },
     {
@@ -317,7 +317,7 @@
       "upper": 0.6,
       "upper_inclusive": false,
       "count": 10,
-      "mean_confidence": 0.5548920653009406,
+      "mean_confidence": 0.5548907128306417,
       "fraction_correct": 0.8
     },
     {
@@ -326,7 +326,7 @@
       "upper": 0.7,
       "upper_inclusive": false,
       "count": 11,
-      "mean_confidence": 0.6577596044473549,
+      "mean_confidence": 0.6577617958916036,
       "fraction_correct": 0.5454545454545454
     },
     {
@@ -335,7 +335,7 @@
       "upper": 0.8,
       "upper_inclusive": false,
       "count": 10,
-      "mean_confidence": 0.7487667681910612,
+      "mean_confidence": 0.7487660108227738,
       "fraction_correct": 0.7
     },
     {
@@ -344,7 +344,7 @@
       "upper": 0.9,
       "upper_inclusive": false,
       "count": 20,
-      "mean_confidence": 0.8503265750883493,
+      "mean_confidence": 0.850326071666134,
       "fraction_correct": 0.9
     },
     {
@@ -353,7 +353,7 @@
       "upper": 1.0,
       "upper_inclusive": true,
       "count": 419,
-      "mean_confidence": 0.9885739619961905,
+      "mean_confidence": 0.9885738996697875,
       "fraction_correct": 0.9904534606205251
     }
   ],

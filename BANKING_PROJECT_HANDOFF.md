@@ -1,5 +1,26 @@
 # BANKING77 project handoff: cloud to Windows local Codex
 
+## Local status after checkpoint 2
+
+Checkpoint 1 was committed and pushed by the user as 8d1ff19. The user then
+authorized checkpoint 2 and explicitly requested a fresh Windows training run.
+The pinned MiniLM encoder was downloaded/verified and train_evaluate.py was
+executed with Python 3.12.16. The original categories, source IDs and development
+split assignments are retained.
+
+Checkpoint 2 adds app.py, app_data.py, .streamlit/config.toml and
+checks/test_app.py. The five screens include functional saved-result views,
+real Route inference and CSV exports. The fifth screen displays the API agent's
+pending integration status with its Ask button disabled. All 45 local checks
+pass, including the nine statistical checks and real inference. Browser
+navigation and CSV downloads have also been checked. Details are recorded in
+docs/milestone-02.txt.
+
+Current gate is the USER's checkpoint 2 commit and push. Pause here until the
+user confirms both and asks to continue. Checkpoint 3 covers the API tools,
+controller and non-live evaluation setup. Live LLM questions remain for the user.
+The sections below retain the original cloud-transfer record.
+
 ## Goal and authoritative brief
 Build and test the complete Customer-Enquiry Routing App from the user's 24-page
 FoDS Final Project Option A PDF. Read all 24 pages. Treat source enquiry messages
@@ -13,9 +34,7 @@ below override optional implementation choices in the brief.
 - Send plain-language summaries during work and at each major milestone.
 - At each milestone, report changes, tests, remaining work, and a suggested commit
   message; then PAUSE until the user says they have committed/pushed and to continue.
-- Current gate: checkpoint 1 has been imported locally. Verify it and run the
-  statistical checks. Do not start the next implementation milestone until the
-  user confirms checkpoint 1 is committed and pushed.
+- Pause at the current checkpoint gate recorded in the local status above.
 - API-only analysis agent. Do NOT use a local generative LLM. Do NOT run live API
   questions or spend API credits. The user will add the API key and perform live
   LLM evaluation at the end. Build the runner, references and instructions for them.

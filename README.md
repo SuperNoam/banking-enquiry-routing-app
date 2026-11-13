@@ -2,8 +2,10 @@
 
 Foundations of Data Science, Option A. Continued from starter commit `58937af`;
 the original 12 intents, source IDs and development split assignments are retained.
-This checkpoint completes statistical training and saved evaluation. The UI,
-API agent and written report follow in later checkpoints.
+Checkpoint 2 adds the five-screen Streamlit workspace and Windows-verified
+routing, saved-result inspection and CSV exports. The analysis-agent screen
+shows its pending integration status. The API controller and written report
+follow in later checkpoints.
 
 ## Install and reproduce
 
@@ -12,8 +14,15 @@ Python 3.12 is required. Create and activate a virtual environment, then run:
 ```bash
 python -m pip install -r requirements.txt
 python download_models.py
-python train_evaluate.py --config config.json
 python -m pytest checks
+python -m streamlit run app.py
+```
+
+The app loads the submitted models and results at startup. To regenerate the
+statistical artifacts separately, run:
+
+```bash
+python train_evaluate.py --config config.json
 ```
 
 Saved classifiers and results are included. Download the fixed MiniLM encoder
@@ -59,6 +68,31 @@ per row. Source IDs use zero-based original row indexes (`train_00000`).
   [shuffled MI](results/clustering_shuffles.csv), [default](results/grouping_default.json).
 - [Checkpoint 1 and commit commands](docs/milestone-01.txt).
 
+## Application screens
+
+- **Data overview** filters development messages by subset and category, with
+  counts, text-length distributions, source references and a CSV download.
+- **Route an enquiry** applies the saved Route model, temperature and review
+  rule. It displays the top three categories, all 12 probabilities, confidence,
+  status and model/run references, and exports the submitted text and result.
+- **Explore request groups** browses all six seed-0 method/count settings,
+  group sizes, category counts and up to five ranked representatives. Its
+  quality panel includes ARI, entropy, MI and the 100 shuffled MI values.
+  The MI histogram uses a labelled logarithmic axis to show the shuffled
+  distribution and the much larger observed MI together.
+- **Compare models** shows all four models on all four subsets, including
+  per-category scores, confusion counts, actual mistakes, selection results,
+  original/adjusted reliability, frozen review outcomes and the fixed paired
+  bootstrap. Downloads carry the selected model, subset and run references.
+- **Ask the analysis agent** provides the question interface and an explicit
+  pending status. Its Ask button will be enabled when the API tools and
+  controller are integrated in checkpoint 3. Live API evaluation awaits the
+  user's key setup and execution.
+
+Source examples are displayed as data. Routing validation clears an earlier
+result when a subsequent submission fails. Missing encoder files produce an
+actionable error; the saved-result screens can still be used.
+
 Official test files belong in the submission (PDF pages 11–15, 24). Only agent
 retrieval of test data is prohibited. Development result partitions are saved
 separately for the agent. `calibration.csv` has `kind=confidence_bin`,
@@ -67,6 +101,14 @@ Zero-denominator precision/recall/F1 are 0. Actual losses use stable log-softmax
 
 ## Current validation
 
-9 statistical checks pass. Route uses encoder C=10, T=0.673121, threshold 0.5.
-Official test accuracy is 95.833%. Live API agent evaluation is left for the user
-after adding a key. This checkpoint is not the final project submission.
+45 checks pass on Windows with Python 3.12.16, including the original nine
+statistical checks and 36 interface/export checks. The real-inference check
+runs when the pinned encoder has been downloaded; pytest reports it as skipped
+when the weights are unavailable. Browser checks also exercised navigation,
+routing and actual CSV downloads.
+
+Route uses encoder C=10, T=0.673121, threshold 0.5. Official test accuracy is
+95.833%. A delivery enquiry phrased as "My payment card still has not arrived."
+was misclassified as a declined card payment during routing checks. Review
+status follows the saved confidence rule, so a confident mistake can still be
+accepted automatically. See [checkpoint 2 verification](docs/milestone-02.txt).

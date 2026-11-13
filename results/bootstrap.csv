@@ -1,2 +1,2 @@
 tfidf_model_id,encoder_model_id,tfidf_C,encoder_C,n,tfidf_loss,encoder_loss,delta,ci_low,ci_high,resamples,seed,sign_convention
-tfidf_C10,encoder_C10,10,10,480,0.33300705456738894,0.1761227951984896,0.1568842593688993,0.1258952808078767,0.18809789081167158,1000,42,TF-IDF loss minus encoder loss
+tfidf_C10,encoder_C10,10,10,480,0.3330070545681253,0.17612300810387946,0.15688404646424584,0.12589499248575858,0.18809770063883882,1000,42,TF-IDF loss minus encoder loss

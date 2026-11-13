@@ -20,7 +20,7 @@
   "n": 1117,
   "accuracy": 0.9964189794091316,
   "macro_f1": 0.9963353776341334,
-  "mean_log_loss": 0.039118329455168514,
+  "mean_log_loss": 0.03911834220864425,
   "confusion_matrix": [
     [
       107,
@@ -308,7 +308,7 @@
       "upper": 0.5,
       "upper_inclusive": false,
       "count": 3,
-      "mean_confidence": 0.4723157100607294,
+      "mean_confidence": 0.47231682497334965,
       "fraction_correct": 1.0
     },
     {
@@ -317,7 +317,7 @@
       "upper": 0.6,
       "upper_inclusive": false,
       "count": 6,
-      "mean_confidence": 0.5506603018788828,
+      "mean_confidence": 0.5506696258487779,
       "fraction_correct": 1.0
     },
     {
@@ -326,7 +326,7 @@
       "upper": 0.7,
       "upper_inclusive": false,
       "count": 16,
-      "mean_confidence": 0.6458745653405438,
+      "mean_confidence": 0.6458765049638034,
       "fraction_correct": 0.8125
     },
     {
@@ -335,7 +335,7 @@
       "upper": 0.8,
       "upper_inclusive": false,
       "count": 23,
-      "mean_confidence": 0.7526109460065749,
+      "mean_confidence": 0.7526091351936025,
       "fraction_correct": 1.0
     },
     {
@@ -344,7 +344,7 @@
       "upper": 0.9,
       "upper_inclusive": false,
       "count": 44,
-      "mean_confidence": 0.8601527815604109,
+      "mean_confidence": 0.8601521123182806,
       "fraction_correct": 1.0
     },
     {
@@ -353,7 +353,7 @@
       "upper": 1.0,
       "upper_inclusive": true,
       "count": 1025,
-      "mean_confidence": 0.9883285916035753,
+      "mean_confidence": 0.9883285505044149,
       "fraction_correct": 0.9990243902439024
     }
   ],

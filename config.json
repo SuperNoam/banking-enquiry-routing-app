@@ -75,7 +75,7 @@
   },
   "route_model_id": "route_encoder_temperature",
   "run_id": "banking77_c13c6d140f_seed42_v1",
-  "temperature": 0.6731213241336798,
+  "temperature": 0.6731213254928456,
   "review_threshold": 0.5,
   "review_rule": "automatic if confidence >= 0.5"
 }

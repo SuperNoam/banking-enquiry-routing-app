@@ -20,7 +20,7 @@
   "n": 480,
   "accuracy": 0.94375,
   "macro_f1": 0.9436986938459797,
-  "mean_log_loss": 0.33300705456738894,
+  "mean_log_loss": 0.3330070545681253,
   "confusion_matrix": [
     [
       38,

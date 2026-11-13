@@ -20,7 +20,7 @@
   "n": 240,
   "accuracy": 0.9541666666666667,
   "macro_f1": 0.951003440640847,
-  "mean_log_loss": 0.17947016774485608,
+  "mean_log_loss": 0.17947029233305417,
   "confusion_matrix": [
     [
       23,
@@ -290,7 +290,7 @@
       "upper": 0.3,
       "upper_inclusive": false,
       "count": 1,
-      "mean_confidence": 0.28697815645555474,
+      "mean_confidence": 0.2869772305561129,
       "fraction_correct": 0.0
     },
     {
@@ -299,7 +299,7 @@
       "upper": 0.4,
       "upper_inclusive": false,
       "count": 2,
-      "mean_confidence": 0.3559847723049212,
+      "mean_confidence": 0.3559809065270648,
       "fraction_correct": 0.0
     },
     {
@@ -308,7 +308,7 @@
       "upper": 0.5,
       "upper_inclusive": false,
       "count": 7,
-      "mean_confidence": 0.45705014245619424,
+      "mean_confidence": 0.4570493515678648,
       "fraction_correct": 0.7142857142857143
     },
     {
@@ -317,7 +317,7 @@
       "upper": 0.6,
       "upper_inclusive": false,
       "count": 9,
-      "mean_confidence": 0.5548978941806222,
+      "mean_confidence": 0.5548983134578628,
       "fraction_correct": 0.7777777777777778
     },
     {
@@ -326,7 +326,7 @@
       "upper": 0.7,
       "upper_inclusive": false,
       "count": 14,
-      "mean_confidence": 0.6586524846782241,
+      "mean_confidence": 0.6586531542990304,
       "fraction_correct": 0.9285714285714286
     },
     {
@@ -335,7 +335,7 @@
       "upper": 0.8,
       "upper_inclusive": false,
       "count": 19,
-      "mean_confidence": 0.7492196843459101,
+      "mean_confidence": 0.7492189304140469,
       "fraction_correct": 0.8421052631578947
     },
     {
@@ -344,7 +344,7 @@
       "upper": 0.9,
       "upper_inclusive": false,
       "count": 21,
-      "mean_confidence": 0.8634424599016013,
+      "mean_confidence": 0.8634425641047149,
       "fraction_correct": 1.0
     },
     {
@@ -353,7 +353,7 @@
       "upper": 1.0,
       "upper_inclusive": true,
       "count": 167,
-      "mean_confidence": 0.9682191095681983,
+      "mean_confidence": 0.9682191030391605,
       "fraction_correct": 1.0
     }
   ],
